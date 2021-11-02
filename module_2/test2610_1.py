@@ -15,6 +15,7 @@ def calc(x):
 with webdriver.Chrome() as browser:
     browser.implicitly_wait(5)
     browser.get("http://suninjuly.github.io/explicit_wait2.html")
+
     WebDriverWait(browser, 12).until(EC.text_to_be_present_in_element((By.ID, "price"), "$100"))
     browser.find_element(By.ID, "book").click()
     answer = calc(browser.find_element(By.ID, "input_value").text)
