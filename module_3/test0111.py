@@ -4,21 +4,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
+correct_answer = "Correct!"
+
 def calc():
     answer = math.log(int(time.time()))
     return str(answer)
-
-correct_answer = "Correct!"
-
-@pytest.fixture(scope="function")
-def browser():
-    print("Start browser")
-    browser = webdriver.Chrome()
-    browser.implicitly_wait(10)
-    yield browser
-    print("Quit browser")
-    browser.quit()
-
 
 class TestStepik:
     @pytest.mark.parametrize('number', ["236895", "236896", "236898", "236897", "236899", "236903", "236904", "236905"])
