@@ -26,6 +26,6 @@ def browser(request):
     else:
         raise pytest.UsageError("--browser_name should be chrome or firefox")
     yield browser
-    time.sleep(3)
+    #time.sleep(3)
     print(f"\n{browser_name} quit...")
     browser.quit()
