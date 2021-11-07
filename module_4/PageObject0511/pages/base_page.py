@@ -4,6 +4,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasePageLocators
+from .locators import BasketPageLocators
 
 import math
 
@@ -55,6 +56,12 @@ class BasePage:
     def go_to_login_page(self):
         try:
             self.browser.find_element(*BasePageLocators.LOGIN_LINK).click()
+        except NoSuchElementException:
+            False
+
+    def go_to_basket_page(self):
+        try:
+            self.browser.find_element(*BasePageLocators.BASKET_LINK).click()
         except NoSuchElementException:
             False
 
