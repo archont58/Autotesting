@@ -1,10 +1,10 @@
 import pytest
 import time
-from pages.product_page import ProductPage
-from pages.main_page import MainPage
-from pages.base_page import BasePage
-from pages.basket_page import BasketPage
-from pages.login_page import LoginPage
+from .pages.product_page import ProductPage
+from .pages.main_page import MainPage
+from .pages.base_page import BasePage
+from .pages.basket_page import BasketPage
+from .pages.login_page import LoginPage
 from selenium.webdriver.common.by import By
 
 link_login = "http://selenium1py.pythonanywhere.com/ru/accounts/login/"
