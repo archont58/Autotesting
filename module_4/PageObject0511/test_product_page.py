@@ -22,7 +22,7 @@ class TestUserAddToBasketFromProductPage:
         self.page_registration.should_be_authorized_user()
 
     def test_user_cant_see_success_message(self, browser):
-        self.product_page = ProductPage(browser, link_product )
+        self.product_page = ProductPage(browser, link_product)
         self.product_page.open()
         self.product_page.should_not_be_success_message()
 
