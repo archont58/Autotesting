@@ -20,7 +20,6 @@ class LoginPageLocators:
      REGISTER_PASSWORD_SECOND = (By.CSS_SELECTOR, "#id_registration-password2")
      REGISTER_BUTTON = (By.CSS_SELECTOR, "[name='registration_submit']")
 
-
 class ProductPageLocators:
     ADD_BUTTON = (By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
     PRODUCT_NAME_IN_MESSAGE = (By.CSS_SELECTOR, "#messages>div:nth-child(1)>.alertinner>strong")
