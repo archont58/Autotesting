@@ -8,11 +8,13 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class BasketPage(BasePage):
     def basket_should_be_empty(self):
-        assert self.is_not_element_present(*BasketPageLocators.BASKET_ITEMS), "Message is present!"
+        # проверка, что корзина пуста
+        assert self.is_not_element_present(*BasketPageLocators.BASKET_ITEMS), "Basket isn't empty!"
 
     def should_be_empty_basket_message(self):
+        # проверка, что сообщение о пустой корзине отсутствует
         try:
             assert "Your basket is empty" in self.browser.find_element \
-                (*BasketPageLocators.MESSAGE_EMPTY_BASKET).text, "Basket isn't empty!"
+                (*BasketPageLocators.MESSAGE_EMPTY_BASKET).text, "Message is present!"
         except NoSuchElementException:
             False
