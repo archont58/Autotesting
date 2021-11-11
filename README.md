@@ -15,5 +15,6 @@ In this repo I publish the code created during the study of practice autotesting
 
 ---
 `Final_project` - Final project for review
-Command for start: 
+Command for start:
+
 `pytest -v --tb=line --language=en -m need_review`
