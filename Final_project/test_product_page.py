@@ -49,7 +49,7 @@ def test_gust_cant_see_success_message(browser):
     product_page.should_not_be_success_message()
 
 @pytest.mark.need_review
-def test_gust_can_add_product_to_basket(browser):
+def test_guest_can_add_product_to_basket(browser):
     product_page = ProductPage(browser, link_product )
     product_page.open()
     product_page.add_product_to_basket()
