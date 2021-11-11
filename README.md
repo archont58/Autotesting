@@ -6,3 +6,14 @@ In this repo I publish the code created during the study of practice autotesting
 
 ---
 `module_2` - Useful methods of Selenium.
+
+---
+`module_3` - Testing frameworks.
+
+---
+`module_4` - Page Objects
+
+---
+`Final_project` - Final project for review
+Command for start: 
+`pytest -v --tb=line --language=en -m need_review`
