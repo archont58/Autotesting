@@ -1,5 +1,5 @@
 # Autotesting
-In this repo I publish the code created during the study of practice autotesting on Stepik (https://stepik.org/course/575/)
+In this repo I publish the code created during the study of practice autotesting.
 
 ---
 `module_1` - Introduction to Selenium.
@@ -14,7 +14,7 @@ In this repo I publish the code created during the study of practice autotesting
 `module_4` - Page Objects
 
 ---
-`Final_project` - Final project for review
-Command for start:
+`Final_project` - Final project. 
+Command to start:
 
 `pytest -v --tb=line --language=en -m need_review`
